@@ -1,0 +1,14 @@
+
+fromMarkupsNodeID_0 = slicer.modules.markups.logic().AddNewFiducialNode()
+fromMarkupsNode_0 = getNode(fromMarkupsNodeID_0)
+fromMarkupsNode_0.SetName("Compare_Points_0")
+
+for z in range(0, 4):
+   for y in range(0,5):
+      for x in range(0,5):
+         fromMarkupsNode_0.AddFiducial(x*120+150, y*100-200, z*50-100)
+
+
+
+
+
